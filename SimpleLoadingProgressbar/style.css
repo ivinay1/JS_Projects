@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Archivo", sans-serif;
+}
+
+html,body
+{
+    height: 100% ;
+    width: 100%;
+}
+
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEDEDE;
+}
+
+.loading
+{
+    background-color: #111111;
+    border-radius: 1.5em;
+    height: 3em ;
+    width: 500px;
+    color: #DEDEDE;
+    position: relative;
+}
+
+:root
+{
+    --wide:  5;
+}
+
+.loading::before
+{
+    content: attr(data-label );
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: .5em;
+    left: .5em;
+    bottom: .5em;
+    /* font-size: 1.3rem; */
+    background-color: blue;
+    border-radius: 1.5em;
+    width: calc( var(--wide,0)*1%);
+    min-width: 2rem;
+    max-width: calc(100% - 1em);
+}

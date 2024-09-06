@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Muli', sans-serif;
+}
+
+body
+{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper
+{
+    height: 100%;
+    width: 100%;
+    background-color: #4682B4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container
+{
+    height: 400px;
+    width: 380px;
+    background-color: #2A4E6C;
+    padding: 30px 40px;
+    border-radius: 10px;
+}
+
+h1
+{
+    text-align: center;
+    
+}
+
+.formControl
+{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+.btn
+{
+    width: 100%;
+    height:40px;
+    background-color: #ADD8E6;
+    color: black;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+p
+{
+    margin: 20px;
+}
+
+input
+{
+    /* border-bottom: 1px solid green; */
+    background-color: #2A4E6C;
+    /* border-top: none;
+    border-left: none;
+    border-right: none; */
+    border: none;
+    width: 100%;
+    position: absolute;
+    bottom: 12px;
+}
+
+label
+{
+    position: absolute;
+    bottom: 12px;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+input:focus
+{
+    outline: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+/* Add the 'active' class to shift the label above the input */
+label.active {
+    transform: translateY(-30px); /* Move label up */
+    font-size: 12px; /* Shrink the label */
+    color: #ADD8E6; /* Change label color */
+}

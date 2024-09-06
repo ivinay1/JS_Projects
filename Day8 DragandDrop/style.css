@@ -1,0 +1,45 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body
+{
+    height: 100%;
+    width: 100%;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    gap: 40px;
+}
+
+.container
+{
+    border: 2px dashed red;
+    height: 70%;
+    width: 30%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.b
+{
+    height: 80px;
+    width: 100px;
+    border: 2px solid red;
+}
+
+
+
+

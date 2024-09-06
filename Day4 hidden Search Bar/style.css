@@ -1,0 +1,77 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #22212A;
+}
+
+.container
+{
+    margin: 40px;
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+.bar
+{
+    border-radius: 25px;
+    height: 40px;
+    width: 40px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    transition: 0.3s all ease-in-out;
+}
+
+button
+{
+    background-color: #22212A;
+    border: none;
+}
+
+
+.search
+{
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+}
+
+.cancel
+{
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    color: red;
+    z-index: -1;
+    position: absolute;
+}
+
+.active .bar
+{
+    width: 250px;
+    background-color: black
+}
+
+.active .search
+{
+    transform: translate(210px,2px)scale(0.8);
+    background: transparent;
+}
+
+.active .cancel
+{
+    transform: translate(250px);       
+    z-index: 0;
+}

@@ -1,0 +1,53 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body
+{
+    height: 100%;
+    width: 100%;
+}
+
+body
+{
+    display: grid;
+    row-gap: 20px;
+    justify-content: center;
+    padding-block: 10px;
+    overflow-x: hidden;
+}
+
+h1
+{
+    text-align: center;
+}
+
+.b
+{
+    height: 300px;
+    width: 400px;
+    background-color: #4682B4;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 600;
+    transform: translateX(400%); /* initially chupe huei hai right mein */
+    transition: transform 0.4s ease-in;
+}
+
+.b:nth-of-type(even)
+{
+    transform: translateX(-400%);  /* initially chupe huei hai right mein */
+}
+
+.b.show
+{
+    transform: translateX(0);
+}
